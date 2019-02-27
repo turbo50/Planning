@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="PresentoirePU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>entite.Congregation</class>
+    <class>entite.Proclamateur</class>
+    <class>entite.EmploiT</class>
+    <class>entite.THoraire</class>
+    <class>entite.Fait</class>
+    <class>entite.Activite</class>
+    <class>entite.Planning</class>
+    <class>entite.S43</class>
+    <class>entite.Site</class>
+    <class>entite.Note</class>
+    <class>entite.Evaluation</class>
+    <class>entite.Jour</class>
+    <class>entite.Note_1</class>
+    <class>entite.Proclamateur_1</class>
+    <class>entite.Congregation_1</class>
+    <class>entite.THoraire_1</class>
+    <class>entite.Jour_1</class>
+    <class>entite.MessageDivers</class>
+    <class>entite.InfosDiverse</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mlr2?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.password" value="damico"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+    </properties>
+  </persistence-unit>
+</persistence>
